@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", "sans-serif";
+}
+
+/*Header*/
+header {
+  width: 100%;
+  background: url("./assets/images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  min-height: 550px;
+  color: white;
+}
+
+/*navigation*/
+nav {
+  width: 80%;
+  padding-top: 12px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+li {
+  padding: 5px 8px;
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 620px) {
+  nav {
+    width: 100%;
+  }
+
+  li {
+    padding: 5px 2px;
+    font-size: 0.8rem;
+  }
+}
+
+/*Carousel*/
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+  /* background-color: violet; */
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-content h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.carousel-content span {
+  font-weight: bold;
+}
+
+.carousel-content p {
+  align-self: center;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.carousel-content button {
+  background: rgb(65, 184, 214);
+  width: 100px;
+  align-self: center;
+  margin-top: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+}
+
+.carousel-prev img {
+  width: 20px;
+  filter: invert(99%);
+  margin-right: 40px;
+}
+
+.carousel-next img {
+  width: 20px;
+  filter: invert(99%);
+  margin-left: 40px;
+}
+
+.carousel-radio {
+  width: 85px;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 620px) {
+  .carousel {
+    width: 100%;
+  }
+
+  .carousel-content h1 {
+    font-size: 1.15rem;
+  }
+
+  .carousel-content p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .carousel-prev img {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .carousel-next img {
+    width: 20px;
+    margin-left: 10px;
+  }
+}
+
+/*About us section*/
+#about-us h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#about-us p {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 80px;
+}
