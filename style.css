@@ -11,12 +11,62 @@ body {
 /*Header*/
 header {
   width: 100%;
+}
+
+.slider {
+  min-height: 550px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide:first-child {
   background: url("./assets/images/1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  min-height: 550px;
-  color: white;
+}
+
+.slide:nth-child(2) {
+  background: url("./assets/images/2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.slide:nth-child(3) {
+  background: url("./assets/images/3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.slide:nth-child(4) {
+  background: url("./assets/images/4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.slide:nth-child(5) {
+  background: url("./assets/images/5.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
 /*navigation*/
@@ -26,6 +76,10 @@ nav {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  color: white;
 }
 
 p {
@@ -42,6 +96,11 @@ ul {
 li {
   padding: 5px 8px;
   font-size: 0.9rem;
+}
+
+li:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 620px) {
@@ -61,7 +120,6 @@ li {
   justify-content: center;
   align-items: center;
   margin-top: 180px;
-  /* background-color: violet; */
 }
 
 .carousel-content {
@@ -97,22 +155,13 @@ li {
   border: none;
 }
 
-.carousel-prev img {
-  width: 20px;
-  filter: invert(99%);
-  margin-right: 40px;
-}
-
-.carousel-next img {
-  width: 20px;
-  filter: invert(99%);
-  margin-left: 40px;
-}
-
 .carousel-radio {
-  width: 85px;
-  margin: 30px auto;
-  cursor: pointer;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 35%;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 620px) {
@@ -138,6 +187,25 @@ li {
     width: 20px;
     margin-left: 10px;
   }
+}
+
+/*buttons*/
+.carousel-prev img {
+  width: 40px;
+  filter: invert(99%);
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  left: 8px;
+}
+
+.carousel-next img {
+  width: 40px;
+  filter: invert(99%);
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  right: 8px;
 }
 
 /*About us section*/
