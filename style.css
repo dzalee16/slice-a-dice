@@ -106,11 +106,23 @@ li:hover {
 @media only screen and (max-width: 620px) {
   nav {
     width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+
+  p {
+    font-size: 1rem;
+    padding-top: 3px;
+  }
+
+  ul {
+    margin-right: 10px;
   }
 
   li {
     padding: 5px 2px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -155,15 +167,6 @@ li:hover {
   border: none;
 }
 
-.carousel-radio {
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  top: 35%;
-  display: flex;
-  justify-content: center;
-}
-
 @media only screen and (max-width: 620px) {
   .carousel {
     width: 100%;
@@ -177,16 +180,15 @@ li:hover {
     font-size: 0.8rem;
     text-align: center;
   }
+}
 
-  .carousel-prev img {
-    width: 20px;
-    margin-right: 10px;
-  }
-
-  .carousel-next img {
-    width: 20px;
-    margin-left: 10px;
-  }
+.carousel-radio {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 35%;
+  display: flex;
+  justify-content: center;
 }
 
 /*buttons*/
@@ -206,6 +208,16 @@ li:hover {
   position: absolute;
   top: 25%;
   right: 8px;
+}
+
+@media only screen and (max-width: 620px) {
+  .carousel-prev img {
+    width: 20px;
+  }
+
+  .carousel-next img {
+    width: 20px;
+  }
 }
 
 /*About us section*/
@@ -343,10 +355,15 @@ li:hover {
   .content {
     height: 400px;
     width: 90% !important;
+    align-items: center;
   }
 
   .img {
     width: 90% !important;
+  }
+
+  .section-container .content p {
+    text-align: center;
   }
 }
 
